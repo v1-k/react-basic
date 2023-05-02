@@ -8,7 +8,7 @@ import Home from "./components/Home";
 import Protected from "./components/Protected";
 import Navigation from "./components/Navigation";
 import Logout from "./components/Logout";
-
+import BackgroundTasks from "./components/BackgroundTask";
 const App = () => {
   const [loggedIn, setLoggedIn] = useState(false);
   const [userName, setUsername] = useState("");
@@ -61,6 +61,10 @@ const App = () => {
           <Route
             path="/protected"
             element={<Protected getToken={getToken} />}
+          />
+          <Route
+            path="/backgroundtask"
+            element={<BackgroundTasks getToken={getToken} />}
           />
           <Route
             path="/logout"

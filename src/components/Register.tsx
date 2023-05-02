@@ -19,7 +19,7 @@ const Register = ({ setToken }: Props) => {
         password,
       });
       const data = response.data;
-      console.log(data);
+
       if (data.access_token && data.token_type === "bearer") {
         setToken(`${data.access_token}`);
         navigate("/");

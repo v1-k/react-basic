@@ -77,6 +77,20 @@ const Navigation = ({ loggedIn, userName }: NavigationProps) => {
                     Protected
                   </NavLink>
                 </li>
+                <li
+                  className={
+                    isActive("/backgroundtask") ? "active nav-item" : "nav-item"
+                  }
+                >
+                  <NavLink
+                    className={`nav-link ${
+                      isActive("/backgroundtask") ? "active" : ""
+                    }`}
+                    to="/backgroundtask"
+                  >
+                    Background Task
+                  </NavLink>
+                </li>
               </>
             )}
           </ul>

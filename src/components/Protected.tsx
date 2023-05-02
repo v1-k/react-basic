@@ -11,7 +11,7 @@ const Protected = ({ getToken }: Props) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/protected/", {
+        const response = await axios.get("http://127.0.0.1:8000/protected", {
           headers: {
             Authorization: "Bearer " + getToken(),
           },
