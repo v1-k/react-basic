@@ -49,16 +49,6 @@ const Navigation = ({ loggedIn, userName }: NavigationProps) => {
                     Login
                   </NavLink>
                 </li>
-                <li className="nav-item">
-                  <NavLink
-                    className={`nav-link ${
-                      isActive("/register") ? "active" : ""
-                    }`}
-                    to="/register"
-                  >
-                    Register
-                  </NavLink>
-                </li>
               </>
             )}
             {loggedIn && (

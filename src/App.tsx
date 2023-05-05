@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import jwtDecode from "jwt-decode";
 import Cookies from "js-cookie";
 import Login from "./components/Login";
-import Register from "./components/Register";
 import Home from "./components/Home";
 import Protected from "./components/Protected";
 import Navigation from "./components/Navigation";
@@ -56,7 +55,7 @@ const App = () => {
         <Navigation loggedIn={loggedIn} userName={userName} />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/register" element={<Register setToken={setToken} />} />
+
           <Route path="/login" element={<Login setToken={setToken} />} />
           <Route
             path="/protected"
